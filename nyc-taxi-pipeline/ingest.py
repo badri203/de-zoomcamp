@@ -9,7 +9,7 @@ import json
 JAN_CSV_PATH = "data/raw/yellow_tripdata_2021-01.csv.gz"
 FEB_PARQUET_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-02.parquet"
 ZONE_CSV_PATH = "data/raw/taxi_zone_lookup.csv"
-CREDENTIALS = "/workspaces/de-zoomcamp/nyc-taxi-pipeline/keys/nyc-creds.json"
+CREDENTIALS = "keys/nyc-creds.json"
 PROJECT_ID = "project-a3416167-bd30-4a48-987"
 BUCKET_NAME = "project-a3416167-bd30-4a48-987-nyc-taxi-v2-raw"
 DATASET_ID = "nyc_taxi_analytics_v2"
@@ -242,7 +242,7 @@ def create_joined_view():
     
     client.query(view_query).result()
     print(f"  Created view: {view_id}")
-
+ 
 def demo_run():
     """Demo: Load March 2021 data and append to existing tables"""
     print("=== NYC Taxi Pipeline v2 — DEMO RUN ===\n")
