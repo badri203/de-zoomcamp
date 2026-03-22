@@ -1,5 +1,5 @@
 def main():
-    print("Hello from de-zoomcamp!")
+    print("Hello from demo-pipeline!")
 
 
 if __name__ == "__main__":

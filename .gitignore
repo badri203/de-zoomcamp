@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# GCP credentials
+*.json
+my-creds.json
+
+# Data files
+*.csv
+*.csv.gz
+*.parquet
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+
+# Backup Files
+*.backup
